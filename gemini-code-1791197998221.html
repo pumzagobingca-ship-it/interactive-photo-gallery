@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+    </header>
+
+    <main>
+        <!-- Main display container required by assignment specs -->
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <!-- Gallery with 3 thumbnails -->
+        <div class="gallery">
+            <img class="preview" 
+                 alt="Styling with a Bandana" 
+                 src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=600&auto=format&fit=crop" 
+                 onmouseover="upDate(this)" 
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()"
+                 tabindex="0">
+
+            <img class="preview" 
+                 alt="Cute Fluffy Cat" 
+                 src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&auto=format&fit=crop" 
+                 onmouseover="upDate(this)" 
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()"
+                 tabindex="0">
+
+            <img class="preview" 
+                 alt="Playful Ginger Cat" 
+                 src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600&auto=format&fit=crop" 
+                 onmouseover="upDate(this)" 
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()"
+                 tabindex="0">
+        </div>
+    </main>
+
+</body>
+</html>
